@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login | ChapNet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: times new roman, verdana, courier, times new roman, comic sans ms, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    width: 400px;
+    margin: auto;
+
+}
+
+.img_container {
+text-align: center;
+margin: 24px 0 12px 0;
+}
+
+img.avatar {
+width: 80px;
+border-radius: 100px;
+}
+
+.container {
+padding: 16px;
+margin: auto;
+width: 350px;
+border: 3px black;
+text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>ChapNet Login</h1>
+
+<form action="login.php" method="post">
+
+    <div class="img_container">
+        <img src="logo.png" alt="Westlake Student Council" class="avatar">
+    </div>
+
+    <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+    </div>
+
+    <div class="container">
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>    
+    </div>
+
+    <div class="container">
+        <button type="submit">Login</button>
+    </div>
+
+    <div class="container">
+        <span><a href="#">Forgot password?</a></span>
+        <br>
+        <span><a href="https://westlakestuco.com">Go back</a></span>
+    </div>
+</form>
+
+</body>
+</html>
+
